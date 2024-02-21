@@ -26,21 +26,21 @@ enum TabBarType: Int, CaseIterable, Hashable {
     
     private var icon: UIImage? {
         switch self {
-            case .home: UIImage(systemName: "house")?.withRenderingMode(.alwaysOriginal)
-            case .search: UIImage(systemName: "magnifyingglass.circle")?.withRenderingMode(.alwaysOriginal)
-            case .notification: UIImage(systemName: "bell")?.withRenderingMode(.alwaysOriginal)
-            case .cart: UIImage(systemName: "cart")?.withRenderingMode(.alwaysOriginal)
-            case .settings: UIImage(systemName: "gear.circle")?.withRenderingMode(.alwaysOriginal)
+            case .home: UIImage(systemName: "house")
+            case .search: UIImage(systemName: "magnifyingglass.circle")
+            case .notification: UIImage(systemName: "bell")
+            case .cart: UIImage(systemName: "cart")
+            case .settings: UIImage(systemName: "gear.circle")
         }
     }
     
     private var selectedIcon: UIImage? {
         switch self {
-            case .home: UIImage(systemName: "house.fill")?.withRenderingMode(.alwaysOriginal)
-            case .search: UIImage(systemName: "magnifyingglass.circle.fill")?.withRenderingMode(.alwaysOriginal)
-            case .notification: UIImage(systemName: "bell.fill")?.withRenderingMode(.alwaysOriginal)
-            case .cart: UIImage(systemName: "cart.fill")?.withRenderingMode(.alwaysOriginal)
-            case .settings: UIImage(systemName: "gear.circle.fill")?.withRenderingMode(.alwaysOriginal)
+            case .home: UIImage(systemName: "house.fill")
+            case .search: UIImage(systemName: "magnifyingglass.circle.fill")
+            case .notification: UIImage(systemName: "bell.fill")
+            case .cart: UIImage(systemName: "cart.fill")
+            case .settings: UIImage(systemName: "gear.circle.fill")
         }
     }
     
