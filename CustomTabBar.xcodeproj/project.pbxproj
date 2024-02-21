@@ -13,6 +13,13 @@
 		D6BB63B12B854B530008752F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6BB63AF2B854B530008752F /* Main.storyboard */; };
 		D6BB63B32B854B540008752F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6BB63B22B854B540008752F /* Assets.xcassets */; };
 		D6BB63B62B854B540008752F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6BB63B42B854B540008752F /* LaunchScreen.storyboard */; };
+		D6BB63BE2B854C3D0008752F /* Customtabbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6BB63BD2B854C3D0008752F /* Customtabbar.swift */; };
+		D6BB63C02B854D5E0008752F /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6BB63BF2B854D5E0008752F /* TabBarView.swift */; };
+		D6BB63C32B8625700008752F /* TabBarType.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6BB63C22B8625700008752F /* TabBarType.swift */; };
+		D6BB63C52B8628790008752F /* TabBarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6BB63C42B8628790008752F /* TabBarViewModel.swift */; };
+		D6BB63C72B86294E0008752F /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6BB63C62B86294E0008752F /* TabBar.swift */; };
+		D6BB63CD2B862A820008752F /* MakeConstraints in Frameworks */ = {isa = PBXBuildFile; productRef = D6BB63CC2B862A820008752F /* MakeConstraints */; };
+		D6BB63CF2B862B350008752F /* TabBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6BB63CE2B862B350008752F /* TabBarItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +31,12 @@
 		D6BB63B22B854B540008752F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D6BB63B52B854B540008752F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D6BB63B72B854B540008752F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D6BB63BD2B854C3D0008752F /* Customtabbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Customtabbar.swift; sourceTree = "<group>"; };
+		D6BB63BF2B854D5E0008752F /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
+		D6BB63C22B8625700008752F /* TabBarType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarType.swift; sourceTree = "<group>"; };
+		D6BB63C42B8628790008752F /* TabBarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewModel.swift; sourceTree = "<group>"; };
+		D6BB63C62B86294E0008752F /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
+		D6BB63CE2B862B350008752F /* TabBarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +44,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D6BB63CD2B862A820008752F /* MakeConstraints in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +70,7 @@
 		D6BB63A82B854B530008752F /* CustomTabBar */ = {
 			isa = PBXGroup;
 			children = (
+				D6BB63C12B8625530008752F /* TabbarController */,
 				D6BB63A92B854B530008752F /* AppDelegate.swift */,
 				D6BB63AB2B854B530008752F /* SceneDelegate.swift */,
 				D6BB63AD2B854B530008752F /* ViewController.swift */,
@@ -63,8 +78,21 @@
 				D6BB63B22B854B540008752F /* Assets.xcassets */,
 				D6BB63B42B854B540008752F /* LaunchScreen.storyboard */,
 				D6BB63B72B854B540008752F /* Info.plist */,
+				D6BB63BD2B854C3D0008752F /* Customtabbar.swift */,
+				D6BB63BF2B854D5E0008752F /* TabBarView.swift */,
 			);
 			path = CustomTabBar;
+			sourceTree = "<group>";
+		};
+		D6BB63C12B8625530008752F /* TabbarController */ = {
+			isa = PBXGroup;
+			children = (
+				D6BB63C22B8625700008752F /* TabBarType.swift */,
+				D6BB63C42B8628790008752F /* TabBarViewModel.swift */,
+				D6BB63C62B86294E0008752F /* TabBar.swift */,
+				D6BB63CE2B862B350008752F /* TabBarItem.swift */,
+			);
+			path = TabbarController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +111,9 @@
 			dependencies = (
 			);
 			name = CustomTabBar;
+			packageProductDependencies = (
+				D6BB63CC2B862A820008752F /* MakeConstraints */,
+			);
 			productName = CustomTabBar;
 			productReference = D6BB63A62B854B530008752F /* CustomTabBar.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +142,9 @@
 				Base,
 			);
 			mainGroup = D6BB639D2B854B530008752F;
+			packageReferences = (
+				D6BB63CB2B862A820008752F /* XCRemoteSwiftPackageReference "MakeConstraints" */,
+			);
 			productRefGroup = D6BB63A72B854B530008752F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,8 +172,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D6BB63BE2B854C3D0008752F /* Customtabbar.swift in Sources */,
 				D6BB63AE2B854B530008752F /* ViewController.swift in Sources */,
 				D6BB63AA2B854B530008752F /* AppDelegate.swift in Sources */,
+				D6BB63CF2B862B350008752F /* TabBarItem.swift in Sources */,
+				D6BB63C72B86294E0008752F /* TabBar.swift in Sources */,
+				D6BB63C32B8625700008752F /* TabBarType.swift in Sources */,
+				D6BB63C02B854D5E0008752F /* TabBarView.swift in Sources */,
+				D6BB63C52B8628790008752F /* TabBarViewModel.swift in Sources */,
 				D6BB63AC2B854B530008752F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -363,6 +403,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D6BB63CB2B862A820008752F /* XCRemoteSwiftPackageReference "MakeConstraints" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ahmed-yamany/MakeConstraints";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D6BB63CC2B862A820008752F /* MakeConstraints */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D6BB63CB2B862A820008752F /* XCRemoteSwiftPackageReference "MakeConstraints" */;
+			productName = MakeConstraints;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D6BB639E2B854B530008752F /* Project object */;
 }
